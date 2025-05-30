@@ -1,0 +1,118 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    font-family: 'Poppins', sans-serif;
+    background-color: azure;
+    border-radius: 8px;
+    padding: 2em;
+    width: 40em;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    color: #000000;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.handle {
+    display: flex;
+    width: 100%;
+}
+
+.handle input[type="text"] {
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+}
+
+.handle button {
+    flex: 0 0 auto;
+}
+
+input[type="text"] {
+    background-color: #D8E9EE;
+    color: #333;
+    height: 3em;
+    padding: 0 1em;
+    border: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    font-size: 1em;
+    font-weight: 600;
+    outline: none;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    height: 3em;
+    padding: 0 1em;;
+    border: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 1em;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #016adb;
+}
+
+button:focus {
+    outline: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0.5em;
+}
+
+.no-tasks {
+    color: #a1a1a1;
+    text-align: center;
+}
+
+.list-tasks {
+    display: flex;
+    align-items: center;
+    margin: 0.5em 0;
+    padding: 0.5em 0;
+    border-bottom: 0.1em solid #d4e1e6;
+}
+
+.tasks {
+    width: 100%;
+    overflow: hidden;
+}
+
+.tasks > p {
+    margin: 0;
+    padding: 0 1em;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: pre-wrap;
+    max-width: 100%;
+}
+
+.tasks > p.done {
+  text-decoration: line-through;
+  color: #939699;
+}
+
+.toggle-icon, .delete-icon {
+    display: flex;
+    padding: 0.5em;
+}
